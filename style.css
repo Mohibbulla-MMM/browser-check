@@ -28,8 +28,49 @@ button {
     cursor: pointer;
     transition: all 0.3s;
 }
-button:hover{
-    box-shadow: inset 5px 5px 10px rgb(182, 181, 181),
-    5px 5px 10px rgb(156, 156, 156);
 
- }
+button:hover {
+    box-shadow: inset 5px 5px 10px rgb(182, 181, 181),
+        5px 5px 10px rgb(156, 156, 156);
+
+}
+
+.popup {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.397);
+
+    position: fixed;
+    display: none;
+    z-index: 10;
+}
+
+.popup-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.popup .box {
+    background-color: white;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* version test style  */
+.p2 {
+    font-size: 18px;
+    color: red;
+    font-weight: bold;
+}
+
+.block {
+    display: block;
+}
+.none {
+    display: none;
+}

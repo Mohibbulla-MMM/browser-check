@@ -1,6 +1,7 @@
 "use strict";
 const btn = document.getElementById("btn");
 const versionShow = document.getElementById("version-show");
+const popup = document.getElementById("popup");
 // console.log(btn,versionShow);
 const browser = navigator.userAgent;
 btn.addEventListener("click", () => {
@@ -42,44 +43,18 @@ function getVersion(name) {
   if (value4.includes(".")) {
     // console.log(value4.includes('.'));
     console.log(value4);
+    const block = { display: "block" };
+    popup.classList.add('block');
+    popup.classList.remove('none');
+    
     return value4;
-  } else {
+} else {
     return "Not Found";
-  }
 }
+}
+// pop close -----------------
+popup.addEventListener('click' ,()=>{
+    popup.classList.remove('block');
+    popup.classList.add('none');
 
-// const arr = value.indexOf("Chrome");
-// // console.log(arr);
-// const a = value.split(" ");
-// const b = value.slice(arr);
-// const c = b.split(" ");
-// const d = c[0].split("/");
-// // console.log(b);
-// // console.log(d[1]);
-// // console.log(value.split('('));
-
-// function myFunction() {
-//   if (
-//     (navigator.userAgent.indexOf("Opera") ||
-//       navigator.userAgent.indexOf("OPR")) != -1
-//   ) {
-//     alert("Opera");
-//   } else if (navigator.userAgent.indexOf("Edg") != -1) {
-//     alert("Edge");
-//   } else if (navigator.userAgent.indexOf("Chrome") != -1) {
-//     alert("Chrome");
-//   } else if (navigator.userAgent.indexOf("Safari") != -1) {
-//     alert("Safari");
-//   } else if (navigator.userAgent.indexOf("Firefox") != -1) {
-//     alert("Firefox");
-//   } else if (
-//     navigator.userAgent.indexOf("MSIE") != -1 ||
-//     !!document.documentMode == true
-//   ) {
-//     //IF IE > 10
-//     alert("IE");
-//   } else {
-//     alert("unknown");
-//   }
-// }
-// // console.log(value);
+})
