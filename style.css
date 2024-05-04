@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 15px;
+    /* background-image: radial-gradient(rgb(255, 255, 255)  10%, rgb(196, 196, 196) 100%); */
+
+}
+
+button {
+    /* border: 2px solid black; */
+    border: none;
+    padding: 18px 25px;
+    border-radius: 6px;
+    /* shape-outside:  ; */
+    box-shadow: inset 3px 3px 6px rgb(182, 181, 181),
+        3px 3px 6px rgb(156, 156, 156);
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+button:hover{
+    box-shadow: inset 5px 5px 10px rgb(182, 181, 181),
+    5px 5px 10px rgb(156, 156, 156);
+
+ }
